@@ -1,0 +1,16 @@
+<div
+  cdkDropList
+  class="example-list"
+  (cdkDropListDropped)="drop($event)"
+  [cdkDropListSortPredicate]="sortPredicate">
+  <div
+    class="example-box"
+    *ngFor="let number of numbers"
+    [cdkDragData]="number"
+    cdkDrag>{{number}}</div>
+</div>
+
+
+<!-- Copyright 2020 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
